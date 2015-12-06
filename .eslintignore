@@ -1,0 +1,3 @@
+/dist/*
+/example/*
+gulpfile.js
