@@ -9,9 +9,10 @@ const babel = require('babelify')
 const compile = (doWatch, example) => {
   const file = !example ? 'AccessibleFAIcon' : 'example'
   const dest = !example ? 'dist' : 'example'
-  const bundler = watchify(browserify(`./src/${file}.js`,
-                    {debug: true}).transform(babel))
-  const rebundle = () => {
+  var bundler = browserify(`./src/${file}.js`,
+                    {debug: true}).transform(babel)
+  if (doWatch) { bundler = watchify(bundler) }
+  function rebundle() {
     bundler.bundle()
       .on('error', (err) => {console.error(err); this.emit('end')})
       .pipe(source(`${file}.js`))
