@@ -1,7 +1,7 @@
 {
   "name": "react-accessible-fa",
   "version": "1.0.0",
-  "description": "Accessible font awesome icon components for React",
+  "description": "Accessible Font Awesome icon components for React",
   "main": "index.js",
   "scripts": {
     "build": "./node_modules/gulp/gulp",
