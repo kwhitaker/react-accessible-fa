@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Accessible Font Awesome icon components for React",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kwhitaker/react-accessible-fa"
+  },
   "scripts": {
     "build": "./node_modules/gulp/bin/gulp.js build",
     "build:example": "./node_modules/gulp/bin/gulp.js build:example",
