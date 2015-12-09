@@ -1,6 +1,6 @@
 {
   "name": "react-accessible-fa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Accessible Font Awesome icon components for React",
   "main": "index.js",
   "repository": {
